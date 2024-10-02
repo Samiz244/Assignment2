@@ -1,0 +1,206 @@
+body{
+    background-image: url(background.png);
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+    margin:0;
+    padding: 0;
+}
+
+#banner-background
+{
+    background-image: url('bannerbackground.png');
+    background-repeat: repeat-x;
+    height: 50px;  
+}
+#header{
+    font-size: 24px;
+    font-weight: bold;
+    font-style: Tahoma,Verdana, sans-serif;
+    text-align: center;
+}
+
+
+#content
+{
+
+    width: 800px;
+    margin: 0 auto;
+    border: 4px solid gray;
+    display: flex;
+    
+
+}
+
+
+#left_section
+{
+   
+   display: flex;
+   flex-basis: 70%;
+   flex-wrap: wrap;
+
+}
+
+#rating_section{
+    width: 550px;
+    background-image: url(rottenbackground.png);
+    background-repeat: repeat-x;
+    display: flex;
+   flex-wrap: wrap;
+   
+   align-items: first baseline;
+   
+}
+
+#rating_section .film-rating{
+    font-size: 48pt;
+    font-weight: bold;
+    color:red;
+    
+}
+
+#rating_section p{
+    color: white;
+    font-size:8pt;
+    padding: 0;
+    margin-left: 0px;
+   
+}
+
+/* review section*/
+
+.review-columns {
+    top: 20px;
+    left: 0; /* Align it to the left */
+    width: 100%; /* Full width for the columns */
+    display: flex; /* Use flexbox for columns */
+    justify-content: space-between; /* Space between columns */
+    padding: 10px;
+    margin:5px;
+}
+
+.review-column {
+    width: 47%; /* Each column occupies 47% of the width */
+    margin-right: 2%; /* Space between columns */
+}
+
+.review-column:last-child {
+    margin-right: 0; /* Remove margin on the last column */
+}
+
+/* Review Box Styles */
+.review-box {
+    display: flex; /* Align items horizontally */
+    background-color: #E1D697; /* Background color */
+    border: 2px solid gray; /* Gray border */
+    padding: 8px; /* Space between content and border */
+    align-items: center; /* Vertically center items */
+    margin-bottom: 5px; /* Space between review box and reviewer info */
+}
+
+/* To position reviewer info outside of review box */
+.reviewer-info {
+    font-size: 8pt; /* Font size for reviewer info */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove any padding */
+    margin-top: 0; /* Ensure no extra margin */
+}
+
+/* Optional spacing adjustment for reviewer info */
+.reviewer-info img {
+    vertical-align: middle; /* Align icon with text */
+    margin-left: 5px; /* Space between reviewer info and icon */
+}
+
+/* Review Icon Styles */
+.review-icon {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+/* Review Text Styles */
+.review-text {
+    flex: 2; /* Allow text to take remaining space */
+}
+
+.review-quote {
+    font-size: 8pt; /* Font size for quote */
+    margin: 0; /* Remove default margin */
+}
+
+.critic-icon {
+    vertical-align: middle; /* Align icon with text */
+    margin-left: 5px; /* Space between reviewer info and icon */
+}
+
+#review-count p{
+    background-color: #A2B964; /* Background color */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 5px; /* Space between text and edges */
+    font-size: 10pt; /* Font size for the text */
+    margin-top: 223px; /* Space above the review count bar */
+}
+
+
+
+
+#right_section
+{
+    display: flex;
+    flex-wrap: wrap;
+   flex-basis: 30%;
+   background-color: #A2B964; /* Background color */
+   
+}
+
+#overview {
+    flex: 1; /* Allows it to take equal space */
+    width: 40%; /* Adjust width as needed */
+    
+    padding: 0px; /* Padding around the content */
+    border: none; /* Border for the overreaction section */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.overview-column {
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+}
+
+.overview-box {
+   
+    padding: 10px; /* Padding inside each box */
+    
+}
+
+.overview-box dt
+{
+    font-weight: bold;
+    line-height: 2;
+    
+}
+
+
+
+
+
+#w3c-validators {
+    position: fixed; /* Fix the position */
+    bottom: 10px; /* Space from the bottom */
+    right: 10px; /* Space from the right */
+    background-color: rgba(162, 185, 100, 0.9); /* Background color with transparency */
+    padding: 5px; /* Padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 10pt; /* Font size for readability */
+    color: black; /* Text color */
+    z-index: 1000; /* Ensure it is above other elements */
+}
+
+#w3c-validators a {
+    color: black; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+#w3c-validators a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
